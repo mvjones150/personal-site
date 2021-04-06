@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Link from 'next/link'
+import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -11,9 +11,9 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Imej by{' '}
+          {'Imej by '}
           <Link href="/about">
-            <a>Mika</a>
+            Mika
           </Link>
         </h1>
 
@@ -23,5 +23,5 @@ export default function Home() {
 
       </main>
     </div>
-  )
+  );
 }

@@ -1,14 +1,14 @@
-import { useRouter } from 'next/router'
-import BubbleBackground from '../../components/bubble-background'
-import CuteButton from '../../components/cute-button'
+import { useRouter } from 'next/router';
+import BubbleBackground from '../../components/bubble-background';
+import CuteButton from '../../components/cute-button';
 
 export default function About() {
-  const router = useRouter()
+  const router = useRouter();
 
   const navigateHome = (e) => {
-    e.preventDefault()
-    router.push("/")
-  }
+    e.preventDefault();
+    router.push('/');
+  };
 
   return (
     <>
@@ -16,5 +16,5 @@ export default function About() {
       <CuteButton onClick={navigateHome} title="Return Home" />
       <BubbleBackground />
     </>
-  )
+  );
 }
