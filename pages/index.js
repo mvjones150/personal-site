@@ -12,7 +12,7 @@ export default function Home() {
       <main>
         <h1 className="title">
           Imej by{' '}
-          <Link href="/posts/first-post">
+          <Link href="/about">
             <a>Mika</a>
           </Link>
         </h1>
