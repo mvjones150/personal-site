@@ -1,6 +1,6 @@
 export default function CuteButton(props) {
   return (
-    <button className="cute-button">
+    <button onClick={props.onClick} className="cute-button">
       {props.title}
     </button>
   )

@@ -1,14 +1,18 @@
-import Link from 'next/link'
+import { useRouter } from 'next/router'
 import CuteButton from '../../components/cute-button'
 
-export default function FirstPost() {
+export default function About() {
+  const router = useRouter()
+
+  const navigateHome = (e) => {
+    e.preventDefault()
+    router.push("/")
+  }
+
   return (
     <>
       <h1> First Post </h1>
-
-      <Link href="/">
-        <CuteButton title="Return Home" />
-      </Link>
+      <CuteButton onClick={navigateHome} title="Return Home" />
     </>
   )
 }
