@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import BubbleBackground from '../../components/bubble-background'
 import CuteButton from '../../components/cute-button'
 
 export default function About() {
@@ -13,6 +14,7 @@ export default function About() {
     <>
       <h1> First Post </h1>
       <CuteButton onClick={navigateHome} title="Return Home" />
+      <BubbleBackground />
     </>
   )
 }
