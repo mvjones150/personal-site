@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import CuteButton from '../../components/cute-button'
 
 export default function FirstPost() {
   return (
@@ -6,7 +7,7 @@ export default function FirstPost() {
       <h1> First Post </h1>
 
       <Link href="/">
-        <button>Return to home</button>
+        <CuteButton title="Return Home" />
       </Link>
     </>
   )
