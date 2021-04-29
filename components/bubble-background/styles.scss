@@ -1,0 +1,11 @@
+.bubbles {
+  background-image: url('./nikolai-chernichenko-FXeA2Yll3Bc-unsplash.jpg');
+  background-size: cover;
+  background-position: bottom; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}

@@ -1,7 +1,7 @@
-export default function BubbleBackground() {
+export default function BubbleBackground(props) {
   return (
-    <div>
-      <h1>Hello</h1>
+    <div className="bubbles">
+      {props.children}
     </div>
   );
 }
