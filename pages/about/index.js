@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import BubbleBackground from '../../components/bubble-background';
 import CuteButton from '../../components/cute-button';
+import PatreonButton from '../../components/patreon-button';
 
 export default function About() {
   const router = useRouter();
@@ -11,10 +12,9 @@ export default function About() {
   };
 
   return (
-    <>
-      <h1> First Post </h1>
-      <CuteButton onClick={navigateHome} title="Return Home" />
-      <BubbleBackground />
-    </>
+    <BubbleBackground>
+      <CuteButton onClick={navigateHome} title="M M" />
+      <PatreonButton />
+    </BubbleBackground>
   );
 }
